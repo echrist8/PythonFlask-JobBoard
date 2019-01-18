@@ -1,3 +1,5 @@
+{% extends "layout.html" %}
+
 {% block content %}
   <div>
       <h1</>{{ employer['name'] }}</h1>
@@ -7,7 +9,7 @@
   </div>
 
   <h2>Jobs</h2>
-  {{ show_jobs(jobs)}}
+  {{ show_jobs(jobs) }}
 
   <h2>Reviews</h2>
     {% for review in reviews}
@@ -21,7 +23,7 @@
         <div class="media-content">
           <div class="content">
               <p>
-                  <strong>{{ review['tittle'] }}</strong>
+                  <strong>{{ review['title'] }}</strong>
                   <small>{{ review['title'] }}</small>
                   <small>{{ review['date']</small>
                   {{ review['review'] }}
